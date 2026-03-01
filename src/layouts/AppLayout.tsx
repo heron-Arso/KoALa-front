@@ -20,16 +20,12 @@ export default function AppLayout() {
 
   const onNavigate = (key: NavKey) => {
     if (key === "home") navigate("/");
-    else navigate("/"); // TODO: 추후 라우팅 연결
+    else navigate("/");
   };
 
   return (
-    <div className="min-h-dvh bg-[#0B0B0D] text-white">
-      <Header
-        title="AI"
-        onMenuClick={() => console.log("menu")}
-        onSearchClick={() => console.log("search")}
-      />
+    <div className="min-h-dvh bg-white text-[#111111]">
+      <Header />
 
       <main className="pt-[56px] pb-[76px]">
         <Outlet />
